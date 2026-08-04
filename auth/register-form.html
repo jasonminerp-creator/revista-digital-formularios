@@ -4,27 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro | Revista Digital</title>
     <link rel="stylesheet" href="../css/form-style.css">
 </head>
 
 <body>
-    <form action="">
+    <main class="auth-wrapper">
+        <form class="auth-card" action="#" method="post" autocomplete="on">
+            <h2>Formulario de Registro</h2>
+            <p class="form-subtitle">Crea tu cuenta para participar en la revista.</p>
 
-        <h2>Formulario de Registro</h2>
+            <label for="register-name">Nombre de usuario</label>
+            <input id="register-name" type="text" name="name" placeholder="Ingresa tu nombre" minlength="3" required>
 
-        <input type="text" name="name" placeholder="Nombre de usuario">
+            <label for="register-email">Correo electronico</label>
+            <input id="register-email" type="email" name="email" placeholder="usuario@email.com" required>
 
-        <input type="email" name="email" placeholder="Usuario (email)...">
+            <label for="register-password">Contrasena</label>
+            <input id="register-password" type="password" name="password" placeholder="Minimo 8 caracteres" minlength="8" required>
 
-        <input type="password" name="password" placeholder="ingrese su contraseña...">
+            <label for="register-confirm">Confirmar contrasena</label>
+            <input id="register-confirm" type="password" name="confirm_password" placeholder="Repite tu contrasena" minlength="8" required>
 
-        <button>Registrar</button>
+            <button type="submit">Registrar cuenta</button>
 
-        <a href="../auth/login-form.html">Ya tengo cuenta de usuario</a>
-        <a href="../index.html">Retornar al inicio</a>
-
-    </form>
+            <a href="../auth/login-form.html">Ya tengo cuenta de usuario</a>
+            <a href="../index.html">Retornar al inicio</a>
+        </form>
+    </main>
 </body>
 
 </html>

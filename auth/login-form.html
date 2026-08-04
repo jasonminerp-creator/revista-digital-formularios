@@ -4,25 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login | Revista Digital</title>
     <link rel="stylesheet" href="../css/form-style.css">
 </head>
 
 <body>
-    <form action="">
+    <main class="auth-wrapper">
+        <form class="auth-card" action="#" method="post" autocomplete="on">
+            <h2>Acceso de Seguridad</h2>
+            <p class="form-subtitle">Ingresa a tu cuenta para continuar.</p>
 
-        <h2>Acceso de Seguridad</h2>
+            <label for="login-email">Correo electronico</label>
+            <input id="login-email" type="email" name="email" placeholder="usuario@email.com" required>
 
-        <input type="email" name="email" placeholder="Usuario (email)...">
+            <label for="login-password">Contrasena</label>
+            <input id="login-password" type="password" name="password" placeholder="Ingresa tu contrasena" minlength="8" required>
 
-        <input type="password" name="password" placeholder="ingrese su contraseña...">
+            <button type="submit">Iniciar sesion</button>
 
-        <button>Login</button>
-
-        <a href="../auth/register-form.html">No tengo cuenta de usuario</a>
-
-        <a href="../index.html">Retornar al inicio</a>
-    </form>
+            <a href="../auth/register-form.html">No tengo cuenta de usuario</a>
+            <a href="../index.html">Retornar al inicio</a>
+        </form>
+    </main>
 </body>
 
 </html>
