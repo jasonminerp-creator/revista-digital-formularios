@@ -17,6 +17,8 @@ header h1{
 
 nav{
     background-color: red;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav ul{
